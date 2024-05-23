@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="intro-div" >
+    <div class="intro-div">
         <ul class="intro-words">
             <li><span id="span1"> Martic</span> Letter box</li>
             <ul class="flex">
@@ -33,15 +33,15 @@
                     <li id="sch">School application</li>
                 </a>
                 <li id="resign">Resignation letter </li>
-                <li  id=" sack">Sack letter</li>
+                <li id=" sack">Sack letter</li>
             </ul>
         </div>
     </div>
 
-    <div class="main-container" >
-        <div class="sch-form" >
+    <div class="main-container">
+        <div class="sch-form">
             <p id="h1">School application mail </p>
-            <ul class="gen">
+            <ul class="count">
                 <li>Generating...</li>
                 <ul class="flex2">
                     <li id="one">1</li>
@@ -51,42 +51,36 @@
                     <li id="five">5</li>
                 </ul>
             </ul>
-            <main id="main">
-                <p id="ei">Edit Input...</p>
-                <a href="#h1"><button id="edit">Edit</button></a>
-                <a href="#h1"><button id="new" >New</button></a>
-                
-            </main>
             <form id="form">
                 <div>
                     <label for="name1">Principal's Name :</label>
-                    <input id="name1" type="text">
+                    <input id="name1" required type="text">
                 </div>
                 <div>
                     <label for="name2">Your Surname and First Name :</label>
-                    <input id="name2" type="text">
+                    <input id="name2" required type="text">
                 </div>
                 <div>
                     <label for="sch-name">School Name :</label>
-                    <input id="sch-name" type="text">
+                    <input id="sch-name" required type="text">
                 </div>
                 <div>
                     <label for="intrest">mention any specific programs or facilities that resonate with
                         you :</label>
-                    <input id="intrest" type="text">
+                    <input id="intrest" required type="text">
                 </div>
                 <div>
                     <label for="email">Your Email Address :</label>
-                    <input id="email" type="text">
+                    <input id="email" placeholder="marticjesus@gmail.com" required type="text">
                 </div>
                 <div>
                     <label for="number">Your Phone Number :</label>
-                    <input id="number" type="text">
+                    <input id="number" required type="number">
 
                 </div>
                 <main>
                     <p>Generate Mail...</p>
-                    <a href="#h1">  <button type="submit" class="btn">Submit</button></a>
+                    <a href="#h1"> <button type="submit" class="btn">Submit</button></a>
 
                 </main>
 
@@ -99,14 +93,14 @@
 
             <p> Dear <span class="name1"></span>,</p>
 
-            <p> I hope this email finds you well. My name is<span class="name2"></span>, and I am writing to
+            <p> I hope this email finds you well. My name is <span class="name2"></span>, and I am writing to
                 express my keen interest
                 in enrolling at <span class="sch-name school"></span> for the upcoming academic year.</p>
 
             <p> I have heard wonderful things about <span class="sch-name"></span> and its commitment to academic
                 excellence, nurturing
                 environment, and diverse extracurricular opportunities. After thorough research and discussions with
-                current students and alumni, I am confident that <span class="sch-name"></span> is the ideal institution
+                current students and alumni, I am confident that  <span class="sch-name"></span> is the ideal institution
                 for me to
                 further my education and personal development.
             </p>
@@ -127,7 +121,7 @@
                 prospect of becoming a part of its esteemed student body. Thank you for considering my application.
             </p>
             <p> I am available at your convenience for any further information or discussions. Please do not hesitate to
-                contact me via email at<span class="email"></span> or by phone at <span class="number"></span>.</p>
+                contact me via email at <span class="email"></span> or by phone at <span class="number"></span>.</p>
 
             <p> Thank you for your time and consideration.</p>
 
@@ -136,13 +130,12 @@
             <p><span class="name2"></span></p>
             <p> <span class="email"></span> | <span class="number"></span>
             </p>
+            <main id="main">
+                <h4 id="ei">Edit Input...</h4>
+                <a href="#h1"><button id="edit">Edit</button></a>
+                <a href="#h1"><button id="new">New</button></a>
 
-
-
-
-
-
-
+            </main>
         </div>
     </div>
 
