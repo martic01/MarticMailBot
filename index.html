@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="intro-div">
+    <div class="intro-div" >
         <ul class="intro-words">
             <li><span id="span1"> Martic</span> Letter box</li>
             <ul class="flex">
@@ -21,7 +21,7 @@
         </ul>
     </div>
 
-    <div class="mail-cont">
+    <div class="mail-cont mail">
         <ul class=" flex">
             <li>Write your </li>
             <li id="span2">Mail</li>
@@ -29,14 +29,123 @@
         <div class="hidden">
             <ul class="mail-opt">
                 <p>Pick the mail you need</p>
-                <li id="sch">School application</li>
+                <a href="#h1">
+                    <li id="sch">School application</li>
+                </a>
                 <li id="resign">Resignation letter </li>
-                <li id=" sack">Sack letter</li>
+                <li  id=" sack">Sack letter</li>
             </ul>
         </div>
     </div>
 
-    <button></button>
+    <div class="main-container" >
+        <div class="sch-form" >
+            <p id="h1">School application mail </p>
+            <ul class="gen">
+                <li>Generating...</li>
+                <ul class="flex2">
+                    <li id="one">1</li>
+                    <li id="two">2</li>
+                    <li id="three">3</li>
+                    <li id="four">4</li>
+                    <li id="five">5</li>
+                </ul>
+            </ul>
+            <main id="main">
+                <p id="ei">Edit Input...</p>
+                <a href="#h1"><button id="edit">Edit</button></a>
+                <a href="#h1"><button id="new" >New</button></a>
+                
+            </main>
+            <form id="form">
+                <div>
+                    <label for="name1">Principal's Name :</label>
+                    <input id="name1" type="text">
+                </div>
+                <div>
+                    <label for="name2">Your Surname and First Name :</label>
+                    <input id="name2" type="text">
+                </div>
+                <div>
+                    <label for="sch-name">School Name :</label>
+                    <input id="sch-name" type="text">
+                </div>
+                <div>
+                    <label for="intrest">mention any specific programs or facilities that resonate with
+                        you :</label>
+                    <input id="intrest" type="text">
+                </div>
+                <div>
+                    <label for="email">Your Email Address :</label>
+                    <input id="email" type="text">
+                </div>
+                <div>
+                    <label for="number">Your Phone Number :</label>
+                    <input id="number" type="text">
+
+                </div>
+                <main>
+                    <p>Generate Mail...</p>
+                    <a href="#h1">  <button type="submit" class="btn">Submit</button></a>
+
+                </main>
+
+
+            </form>
+        </div>
+
+        <div id="mail">
+            <h1>School application mail</h1>
+
+            <p> Dear <span class="name1"></span>,</p>
+
+            <p> I hope this email finds you well. My name is<span class="name2"></span>, and I am writing to
+                express my keen interest
+                in enrolling at <span class="sch-name school"></span> for the upcoming academic year.</p>
+
+            <p> I have heard wonderful things about <span class="sch-name"></span> and its commitment to academic
+                excellence, nurturing
+                environment, and diverse extracurricular opportunities. After thorough research and discussions with
+                current students and alumni, I am confident that <span class="sch-name"></span> is the ideal institution
+                for me to
+                further my education and personal development.
+            </p>
+            <p> I am particularly drawn to <span class="intrest"></span>, as
+                I believe they align perfectly with my academic goals and interests. Additionally, I am impressed by the
+                dedication of the faculty and staff to fostering a supportive learning environment where students are
+                encouraged to excel both academically and personally.
+            </p>
+            <p> Enclosed with this email, please find my completed application form, along with any required documents
+                such
+                as transcripts, letters of recommendation, and standardized test scores. I have ensured that all
+                materials
+                are accurate and up-to-date.</p>
+
+            <p> I am eager to contribute positively to the vibrant community at <span class="sch-name"></span>, and I am
+                excited about
+                the
+                prospect of becoming a part of its esteemed student body. Thank you for considering my application.
+            </p>
+            <p> I am available at your convenience for any further information or discussions. Please do not hesitate to
+                contact me via email at<span class="email"></span> or by phone at <span class="number"></span>.</p>
+
+            <p> Thank you for your time and consideration.</p>
+
+            <p> Warm regards,</p>
+
+            <p><span class="name2"></span></p>
+            <p> <span class="email"></span> | <span class="number"></span>
+            </p>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
 
 </body>
 
