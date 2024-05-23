@@ -19,16 +19,28 @@ $(document).ready(function () {
         $("#mail").show();
         $("#form").hide();
         $("#main").show();
-        $(".gen").show();
+        $(".count").show();
+        $("#edit").show();
 
         event.preventDefault();
     });
     $("#sch").click(function () {
-        $(".main-container").toggle();
+        $(".main-container").show();
+        $("#form").toggle();
+        $("#mail").hide();
+        $(".count").hide();
+
+        $("#name1").val('');
+        $("#name2").val('');
+        $("#sch-name").val('');
+        $("#intrest").val('');
+        $("#email").val('');
+        $("#number").val('');
+
     });
 
     $("#edit").click(function () {
-        $("#main").hide();
+        $("#edit").hide();
         $("#form").show();
     });
 
@@ -40,8 +52,8 @@ $(document).ready(function () {
         $("#email").val('');
         $("#number").val('');
 
-        $(".gen").hide();
-        $("#main").hide();
+        $(".count").hide();
+        $("#edit").show();
         $("#mail").hide();
         $("#form").show();
     });
