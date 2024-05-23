@@ -273,13 +273,14 @@ button {
 }
 
 
-.gen{
+.count {
     width: 60%;
     display: flex;
     gap: 20px;
     display: none;
 }
-.gen li{
+
+.count li {
     opacity: 0;
     font-size: 30px;
     font-weight: 800;
@@ -287,34 +288,40 @@ button {
 
     animation: blinking 4.7s linear;
 }
+
 @keyframes blinking {
     0% {
-       
+
         opacity: 1;
     }
 
     20% {
-       
-    opacity: 0.1;
+
+        opacity: 0.1;
     }
+
     40% {
-       
-    opacity: 1;
+
+        opacity: 1;
     }
+
     60% {
-       
-    opacity: 0.1;
+
+        opacity: 0.1;
     }
+
     80% {
-       
-    opacity: 1;
+
+        opacity: 1;
     }
+
     100% {
-     
-    opacity: 0.1;
+
+        opacity: 0.1;
     }
 }
-.flex2{
+
+.flex2 {
     display: flex;
     align-items: center;
     height: 50px;
@@ -322,7 +329,7 @@ button {
 
 }
 
-.flex2 li{
+.flex2 li {
     letter-spacing: -30px;
     font-size: 40px;
     font-weight: 800;
@@ -330,132 +337,147 @@ button {
     color: white;
 }
 
-#one{
+#one {
     opacity: 0;
 
-    animation: count 1s linear ;
+    animation: count 1s linear;
 
 }
+
 @keyframes count {
     0% {
-       
+
         opacity: 0;
     }
 
     20% {
-        
-    opacity: 1;
+
+        opacity: 1;
     }
 
 }
 
-#two{
+#two {
     opacity: 0;
-    animation: count2 2s linear ;
+    animation: count2 2s linear;
 
 }
+
 @keyframes count2 {
     0% {
-       
+
         opacity: 0;
     }
 
     20% {
-       
-    opacity: 0;
+
+        opacity: 0;
     }
+
     40% {
-     
-    opacity: 1;
+
+        opacity: 1;
     }
 
 }
 
-#three{
+#three {
     opacity: 0;
-    animation: count3 3s linear ;
+    animation: count3 3s linear;
 
 }
+
 @keyframes count3 {
     0% {
-       
+
         opacity: 0;
     }
 
     20% {
-       
-    opacity: 0;
+
+        opacity: 0;
     }
+
     40% {
-       
-    opacity: 0;
+
+        opacity: 0;
     }
+
     60% {
-     
-    opacity: 1;
+
+        opacity: 1;
     }
 
 }
 
-#four{
+#four {
     opacity: 0;
     animation: count4 4s linear;
 
 }
+
 @keyframes count4 {
     0% {
-       
+
         opacity: 0;
     }
 
     20% {
-       
-    opacity: 0;
+
+        opacity: 0;
     }
+
     40% {
-       
-    opacity: 0;
+
+        opacity: 0;
     }
+
     60% {
-       
-    opacity: 0;
+
+        opacity: 0;
     }
+
     80% {
-     
-    opacity: 1;
+
+        opacity: 1;
     }
 }
 
-#five{
+#five {
     opacity: 0;
-    animation: count5 5s linear ;
+    animation: count5 5s linear;
 
 }
+
 @keyframes count5 {
     0% {
-       
+
         opacity: 0;
     }
 
     20% {
-       
-    opacity: 0;
+
+        opacity: 0;
     }
+
     40% {
-       
-    opacity: 0;
+
+        opacity: 0;
     }
+
     60% {
-       
-    opacity: 0;
+
+        opacity: 0;
     }
+
     80% {
-       
-    opacity: 0;
+
+        opacity: 0;
     }
+
     100% {
-     
-    opacity: 1;
+
+        opacity: 1;
     }
 }
 
@@ -463,42 +485,12 @@ button {
     width: 100%;
     color: white;
     padding: 30px 30px;
-    background-color: black;
-    box-shadow: 0 0 4px 1px white;
+    background-color: rgb(39, 2, 2);
     display: none;
     border-radius: 20px;
 
-    animation: showing 5s steps(40) forwards;
-}
-@keyframes showing {
-
-        0% {
-           
-            transform: scaleY(0);
-        }
     
-        20% {
-            transform: scaleY(0);
-
-        }
-        40% {
-           
-            transform: scaleY(0);
-        }
-        60% {
-           
-            transform: scaleY(0);
-        }
-        80% {
-           
-            transform: scaleY(0);
-        }
-        100% {
-         
-            transform: scaleY(1);
-
-        }
-    }
+}
 
 
 #mail h1 {
@@ -512,28 +504,53 @@ button {
 }
 
 #mail p {
+    height: 0;
     text-align: left;
     margin-top: 20px;
-    line-height: 25px;
-    font-weight: 900;
-    font-size: 18px;
+    line-height: 30px;
+    font-weight: 0;
+    font-size: 0;
     display: inline-block;
-    opacity:1;
+    opacity: 1;
 
     animation: typing 5s steps(40) forwards;
 }
 
 @keyframes typing {
-    from {
-      width: 0;
+    0% {
+
+        font-size: 0;
+    }
+
+    20% {
+       
+        font-size: 0;
+    }
+
+    40% {
+        font-size: 2px;
+        font-weight: 200;
+    }
+
+    60% {
+
+        font-size: 7px;
+        font-weight: 400;
+    }
+
+    80% {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    100% {
+
+        font-size: 17px;
+        font-weight: 900;
 
     }
-    to {
-      width: 100%;
+}
 
-     
-    }
-  }
 #h1 {
     text-align: center;
     width: 100%;
@@ -543,6 +560,9 @@ button {
     font-weight: 900;
     font-size: 30px;
     color: red;
+}
+#form{
+    display: none;
 }
 
 #form div {
@@ -613,16 +633,21 @@ button {
 main {
     display: flex;
     align-items: center;
+    gap: 20px;
     height: 100px;
-    width: 50%;
+    width: 40%;
     border-radius: 20px;
 
 
 }
-#main{
+
+#main {
     display: none;
 }
-
+main #ei{
+    font-size: 21px;
+    color: red;
+}
 main p {
     color: red;
     font-weight: 900;
