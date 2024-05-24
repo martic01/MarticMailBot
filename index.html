@@ -32,15 +32,25 @@
                 <a href="#h1">
                     <li id="sch">School application</li>
                 </a>
-                <li id="resign">Resignation letter </li>
-                <li id=" sack">Sack letter</li>
+                <a href="#h2">
+                    <li id="resign">Resignation letter </li>
+                </a>
+                <a href="#h3">
+                    <li id=" sack">Sack letter</li>
+                </a>
             </ul>
         </div>
     </div>
 
-    <div class="main-container">
-        <div class="sch-form">
-            <p id="h1">School application mail </p>
+    <div class="main-container" id="mncont">
+        <div class="sch-form" id="h1" >
+            <p class="h1 h12" id="h12">School application mail </p>
+            <div id="but" class="but">
+                <a href="#mail">
+                    <p class="h1">School application mail </p>
+                    <p class="file"><span id="fileinspan" >Generate real file...</span> <span class="file-span" id="file-span" >Return to input...</span> </p>
+                </a>
+            </div>
             <ul class="count">
                 <li>Generating...</li>
                 <ul class="flex2">
@@ -51,7 +61,7 @@
                     <li id="five">5</li>
                 </ul>
             </ul>
-            <form id="form">
+            <form id="form" class="form1">
                 <div>
                     <label for="name1">Principal's Name :</label>
                     <input id="name1" required type="text">
@@ -78,6 +88,11 @@
                     <input id="number" required type="number">
 
                 </div>
+                <div>
+                    <label for="date">Present date :</label>
+                    <input id="date" required type="date">
+
+                </div>
                 <main>
                     <p>Generate Mail...</p>
                     <a href="#h1"> <button type="submit" class="btn">Submit</button></a>
@@ -88,23 +103,26 @@
             </form>
         </div>
 
-        <div id="mail">
+        <div id="mail" class="email-full">
             <h1>School application mail</h1>
 
-            <p> Dear <span class="name1"></span>,</p>
+            <p> Dear <span class="name1">[Principal's Name]</span>,</p>
 
-            <p> I hope this email finds you well. My name is <span class="name2"></span>, and I am writing to
+            <p> I hope this email finds you well. My name is <span class="name2">[Your Name]</span>, and I am writing to
                 express my keen interest
-                in enrolling at <span class="sch-name school"></span> for the upcoming academic year.</p>
+                in enrolling at <span class="sch-name"> [School Name]</span> for the upcoming academic year.</p>
 
-            <p> I have heard wonderful things about <span class="sch-name"></span> and its commitment to academic
+            <p> I have heard wonderful things about <span class="sch-name"> [School Name]</span> and its commitment to
+                academic
                 excellence, nurturing
                 environment, and diverse extracurricular opportunities. After thorough research and discussions with
-                current students and alumni, I am confident that  <span class="sch-name"></span> is the ideal institution
+                current students and alumni, I am confident that <span class="sch-name"> [School Name]</span> is the
+                ideal institution
                 for me to
                 further my education and personal development.
             </p>
-            <p> I am particularly drawn to <span class="intrest"></span>, as
+            <p> I am particularly drawn to <span class="intrest">[mention any specific programs, facilities, or values
+                    that resonate with you]</span>, as
                 I believe they align perfectly with my academic goals and interests. Additionally, I am impressed by the
                 dedication of the faculty and staff to fostering a supportive learning environment where students are
                 encouraged to excel both academically and personally.
@@ -115,30 +133,231 @@
                 materials
                 are accurate and up-to-date.</p>
 
-            <p> I am eager to contribute positively to the vibrant community at <span class="sch-name"></span>, and I am
+            <p> I am eager to contribute positively to the vibrant community at <span class="sch-name"> [School
+                    Name]</span>, and I am
                 excited about
                 the
                 prospect of becoming a part of its esteemed student body. Thank you for considering my application.
             </p>
             <p> I am available at your convenience for any further information or discussions. Please do not hesitate to
-                contact me via email at <span class="email"></span> or by phone at <span class="number"></span>.</p>
+                contact me via email at <span class="email">[Your Email Address]</span> or by phone at <span
+                    class="number">[Your Phone Number]</span>.</p>
 
-            <p> Thank you for your time and consideration.</p>
+            <p> Thank you for your time and consideration.
 
-            <p> Warm regards,</p>
-
-            <p><span class="name2"></span></p>
-            <p> <span class="email"></span> | <span class="number"></span>
             </p>
-            <main id="main">
+            <br>
+            <p> Warm regards,</p>
+            <br>
+
+            <p><span class="name2">[Your Name]</span></p>
+            <br>
+            <p> <span class="email">[Your Email Address]</span> | <span class="number">[Your Phone Number]</span> </p>
+            <br>
+            <p> <span class="date">[Present Date]</span></p>
+            <main id="main" class="main1">
                 <h4 id="ei">Edit Input...</h4>
                 <a href="#h1"><button id="edit">Edit</button></a>
                 <a href="#h1"><button id="new">New</button></a>
 
             </main>
         </div>
+
     </div>
 
+    <!-- SECOND EMAIL -->
+
+    <div class="main-container " id="mncont1">
+        <div class="sch-form" id="h2">
+            <p class="h1 h12" id="h13">School application mail </p>
+            <div id="but2" class="but">
+                <a href="#mail2">
+                    <p class="h1">School application mail </p>
+                    <p class="file"><span id="fileinspan2" >Generate real file...</span> <span class="file-span" id="file-span2" >Return to input...</span> </p>
+                </a>
+            </div>
+            <ul class="count">
+                <li>Generating...</li>
+                <ul class="flex2">
+                    <li id="one">1</li>
+                    <li id="two">2</li>
+                    <li id="three">3</li>
+                    <li id="four">4</li>
+                    <li id="five">5</li>
+                </ul>
+            </ul>
+            <form id="form2" class="form1">
+                <div>
+                    <label for="manager-nm">Manager's Name :</label>
+                    <input id="manager-nm" required type="text">
+                </div>
+                <div>
+                    <label for="yrname">Your Surname and First Name :</label>
+                    <input id="yrname" required type="text">
+                </div>
+                <div>
+                    <label for="company">Company Name :</label>
+                    <input id="company" required type="text">
+                </div>
+                <div>
+                    <label for="yrposition">Your Position :</label>
+                    <input id="yrposition" required type="text">
+                </div>
+                <div>
+                    <label for="nw-date">Present date :</label>
+                    <input id="nw-date" required type="date">
+
+                </div>
+                <main>
+                    <p>Generate Mail...</p>
+                    <a href="#h1"> <button type="submit" class="btn">Submit</button></a>
+
+                </main>
+
+
+            </form>
+        </div>
+
+        <div id="mail2" class="email-full">
+            <h1>Resignation mail</h1>
+
+            <p> Dear <span class="manager-nm">[Manager's Name]</span>,</p>
+
+            <p> I am writing to formally resign from my position as <span class="yrposition"> [Your Position]</span> at
+                <span class="company">[Company Name]</span> , effective <span class="nw-date"> [Resignation Date]</span>
+                . After careful
+                consideration, I have decided to move on to pursue new opportunities that align more closely with my
+                career goals and personal aspirations.
+            </p>
+
+            <p> I want to express my sincere gratitude for the opportunities for growth and development that you and the
+                company have provided me during my tenure. It has been a pleasure working with such a talented and
+                supportive team, and I am grateful for the valuable experiences and relationships I have gained.
+            </p>
+            <p> I will do everything possible to ensure a smooth transition during my remaining time here. I am
+                committed to completing any pending projects and assisting in training my replacement, if necessary.
+            </p>
+            <p> Please let me know if there are any specific tasks or responsibilities you would like me to focus on
+                before my departure. Additionally, I am available to discuss my transition plan or provide any necessary
+                handover documentation.</p>
+
+            <p> Thank you once again for the support and guidance you have provided me during my time at <span
+                    class="company">[Company Name]</span>. I sincerely appreciate the opportunities I have had here, and
+                I wish the
+                company continued success in the future.
+            </p>
+
+            <p> Warm regards,</p>
+            <br>
+
+            <p><span class="yrname">[Your Name]</span></p>
+            <br>
+            <p> <span class="yrposition">[Your Position]
+                </span></p>
+            <br>
+            <p> <span class="nw-date">[Present Date]
+                </span></p>
+            <main id="main2" class="main1">
+                <h4 id="ei">Edit Input...</h4>
+                <a href="#h1"><button id="edit2">Edit</button></a>
+                <a href="#h1"><button id="new2">New</button></a>
+
+            </main>
+        </div>
+
+    </div>
+
+    <!-- THIRD FORM -->
+
+
+    <div class="main-container " id="mncont2">
+        <div class="sch-form">
+            <p id="h3" class="h1">A mail to Sack </p>
+            <ul class="count">
+                <li>Generating...</li>
+                <ul class="flex2">
+                    <li id="one">1</li>
+                    <li id="two">2</li>
+                    <li id="three">3</li>
+                    <li id="four">4</li>
+                    <li id="five">5</li>
+                </ul>
+            </ul>
+            <form id="form2" class="form1">
+                <div>
+                    <label for="manager-nm">Manager's Name :</label>
+                    <input id="manager-nm" required type="text">
+                </div>
+                <div>
+                    <label for="yrname">Your Surname and First Name :</label>
+                    <input id="yrname" required type="text">
+                </div>
+                <div>
+                    <label for="company">Company Name :</label>
+                    <input id="company" required type="text">
+                </div>
+                <div>
+                    <label for="yrposition">Your Position :</label>
+                    <input id="yrposition" required type="text">
+                </div>
+                <div>
+                    <label for="nw-date">Present date :</label>
+                    <input id="nw-date" required type="date">
+
+                </div>
+                <main>
+                    <p>Generate Mail...</p>
+                    <a href="#h1"> <button type="submit" class="btn">Submit</button></a>
+
+                </main>
+
+
+            </form>
+        </div>
+
+        <div id="mail2" class="email-full">
+            <h1>Resignation mail</h1>
+
+            <p> Dear <span class="manager-nm"></span>,</p>
+
+            <p> I am writing to formally resign from my position as <span class="yrposition"></span> at <span
+                    class="company"></span> , effective <span class="nw-date"></span> . After careful
+                consideration, I have decided to move on to pursue new opportunities that align more closely with my
+                career goals and personal aspirations. </p>
+
+            <p> I want to express my sincere gratitude for the opportunities for growth and development that you and the
+                company have provided me during my tenure. It has been a pleasure working with such a talented and
+                supportive team, and I am grateful for the valuable experiences and relationships I have gained.
+            </p>
+            <p> I will do everything possible to ensure a smooth transition during my remaining time here. I am
+                committed to completing any pending projects and assisting in training my replacement, if necessary.
+            </p>
+            <p> Please let me know if there are any specific tasks or responsibilities you would like me to focus on
+                before my departure. Additionally, I am available to discuss my transition plan or provide any necessary
+                handover documentation.</p>
+
+            <p> Thank you once again for the support and guidance you have provided me during my time at <span
+                    class="company"></span>. I sincerely appreciate the opportunities I have had here, and I wish the
+                company continued success in the future.
+            </p>
+
+            <p> Warm regards,</p>
+            <br>
+
+            <p><span class="yrname"></span></p>
+            <br>
+            <p> <span class="yrposition"></span></p>
+            <br>
+            <p> <span class="nw-date"></span></p>
+            <main id="main2" class="main1">
+                <h4 id="ei">Edit Input...</h4>
+                <a href="#h1"><button id="edit2">Edit</button></a>
+                <a href="#h1"><button id="new2">New</button></a>
+
+            </main>
+        </div>
+
+    </div>
 
 </body>
 
