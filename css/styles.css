@@ -12,6 +12,7 @@ ul {
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 input {
@@ -29,16 +30,47 @@ html {
 }
 
 body {
-    height: 700px;
+
     background-color: rgb(39, 2, 2);
+    animation: colour 50s linear infinite;
 }
+
+@keyframes colour {
+    0% {
+        transform: translateX(-35px);
+        background-color: rgb(39, 2, 2);
+
+    }
+
+    25% {
+
+        background-color: rgba(61, 4, 38, 0.822);
+
+    }
+
+    50% {
+
+        background-color: rgb(77, 70, 12);
+    }
+
+    75% {
+
+        background-color: rgb(2, 16, 56);
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+
 
 .intro-div {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120px;
-    width: 800px;
+    width: 900px;
     background-color: black;
     box-shadow: 0 0 7px 1px white;
     border-radius: 100px;
@@ -122,8 +154,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 295px;
-    margin-top: 200px;
-    width: 400px;
+    margin-top: 150px;
+    margin-bottom: 25px;
+    width: 28%;
     height: 200px;
     border-radius: 20px;
     box-shadow: 0 0 4px 1px white;
@@ -131,6 +164,12 @@ body {
     font-size: 25px;
     font-weight: 600;
     color: white;
+
+}
+
+.mail-cont:hover {
+    margin-bottom: 100px;
+    margin-top: 200px;
 
 }
 
@@ -221,11 +260,10 @@ body {
 }
 
 .hidden {
-    margin-top: 20px;
+    margin-bottom: 70px;
     border-radius: 10px;
-    margin-left: -510px;
-    width: 600px;
-    height: 300px;
+    margin-left: -610px;
+    width: 100%;
     background-color: black;
     display: none;
 
@@ -260,7 +298,6 @@ button {
 
 .main-container {
     width: 900px;
-    margin-top: 70px;
     display: none;
 
 }
@@ -271,6 +308,47 @@ button {
     box-shadow: 0 0 4px 1px white;
     border-radius: 20px;
 }
+
+.but {
+    width: 100%;
+    height: 20%;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(175, 97, 97);
+}
+
+.but:hover,
+.but:hover .file {
+    transition: 0.7s ease-in-out;
+    color: white;
+    background-color: rgba(190, 83, 83, 0.473);
+}
+.h12{
+    display: none;
+}
+
+.h1 {
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    padding-top: 20px;
+    font-weight: 900;
+    font-size: 30px;
+    color: red;
+}
+
+.file {
+    text-align: center;
+    width: 100%;
+    height: 30%;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(19, 15, 15);
+}
+.file-span{
+    display: none;
+}
+
 
 
 .count {
@@ -481,7 +559,7 @@ button {
     }
 }
 
-#mail {
+.email-full {
     width: 100%;
     color: white;
     padding: 30px 30px;
@@ -489,11 +567,11 @@ button {
     display: none;
     border-radius: 20px;
 
-    
+
 }
 
 
-#mail h1 {
+.email-full h1 {
     text-align: center;
     font-weight: 900;
     font-size: 25px;
@@ -503,7 +581,7 @@ button {
     margin-bottom: 20px;
 }
 
-#mail p {
+.email-full p {
     height: 0;
     text-align: left;
     margin-top: 20px;
@@ -523,7 +601,7 @@ button {
     }
 
     20% {
-       
+
         font-size: 0;
     }
 
@@ -551,28 +629,20 @@ button {
     }
 }
 
-#h1 {
-    text-align: center;
-    width: 100%;
-    height: 100px;
-    border: 20px;
-    padding-top: 20px;
-    font-weight: 900;
-    font-size: 30px;
-    color: red;
-}
-#form{
+
+
+.form1 {
     display: none;
 }
 
-#form div {
+.form1 div {
     height: 100px;
     display: flex;
     flex-wrap: wrap;
 
 }
 
-#form div label {
+.form1 div label {
     text-align: center;
     font-size: 17px;
     font-weight: 800;
@@ -583,7 +653,7 @@ button {
     width: 550px;
 }
 
-#form div input {
+.form1 div input {
     font-weight: 900;
     font-size: 17px;
     text-align: center;
@@ -594,12 +664,12 @@ button {
 
 }
 
-#form div input:focus {
+.form1 div input:focus {
     border: 2px solid red;
     outline: 2px solid red;
 }
 
-#form main {
+.form1 main {
     display: flex;
     align-items: center;
     height: 100px;
@@ -608,13 +678,13 @@ button {
 
 }
 
-#form main p {
+.form1 main p {
     color: red;
     font-weight: 900;
     font-size: 20px;
 }
 
-#form main button {
+.form1 main button {
     font-size: 25px;
     font-weight: 800;
     height: 50px;
@@ -625,7 +695,7 @@ button {
     color: white;
 }
 
-#form main button:hover {
+.form1 main button:hover {
     background-color: blue;
     color: red;
 }
@@ -641,13 +711,15 @@ main {
 
 }
 
-#main {
+.main1 {
     display: none;
 }
-main #ei{
+
+main #ei {
     font-size: 21px;
     color: red;
 }
+
 main p {
     color: red;
     font-weight: 900;
