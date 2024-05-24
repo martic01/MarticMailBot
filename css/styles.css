@@ -32,35 +32,7 @@ html {
 body {
 
     background-color: rgb(39, 2, 2);
-    animation: colour 50s linear infinite;
-}
 
-@keyframes colour {
-    0% {
-        transform: translateX(-35px);
-        background-color: rgb(39, 2, 2);
-
-    }
-
-    25% {
-
-        background-color: rgba(61, 4, 38, 0.822);
-
-    }
-
-    50% {
-
-        background-color: rgb(77, 70, 12);
-    }
-
-    75% {
-
-        background-color: rgb(2, 16, 56);
-    }
-
-    100% {
-        background-color: black;
-    }
 }
 
 
@@ -344,6 +316,7 @@ button {
     font-weight: 700;
     font-size: 25px;
     color: rgb(19, 15, 15);
+    border-radius: 30px;
 }
 .file-span{
     display: none;
@@ -673,7 +646,7 @@ button {
     display: flex;
     align-items: center;
     height: 100px;
-    width: 30%;
+    width: 40%;
     border-radius: 20px;
 
 }
@@ -705,7 +678,7 @@ main {
     align-items: center;
     gap: 20px;
     height: 100px;
-    width: 40%;
+    width: 50%;
     border-radius: 20px;
 
 
@@ -713,6 +686,7 @@ main {
 
 .main1 {
     display: none;
+
 }
 
 main #ei {

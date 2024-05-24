@@ -107,6 +107,7 @@ $(document).ready(function () {
     });
 
 
+// SECOUND FORM
 
     $("#form2").submit(function (event) {
         const value1Taken = $("#manager-nm").val();
@@ -206,6 +207,8 @@ $(document).ready(function () {
         $("#nw-date").val("");
     });
 
+
+    // THEIRD FORM
 
     $("#form3").submit(function (event) {
         const value1Taken = $("#employ-name").val();

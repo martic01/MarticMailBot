@@ -14,7 +14,7 @@
 
 ## Description
 
-### _Martic letter box is a letter generator that takes little information from it user and returns a well written mail, it also generate an email structures  of your choice. it an application that is easy to use and well discriptive ,it is a fully resposive website i.e you can use it at any point in time and on any device. it does not contain ads and it free to use ._
+### _Martic letter box is a letter generator that takes little information from it user and returns a well written mail, it also generate an email structures  of your choice. its an application that is easy to use and well discriptive ,it is a fully resposive website i.e you can use it at any point in time and on any device. it does not contain ads and it free to use ._
 
 ## Setup/Installation Requirements
 
