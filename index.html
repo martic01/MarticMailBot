@@ -22,7 +22,7 @@
     </div>
 
     <div class="mail-cont mail">
-        <ul class=" flex">
+        <ul class=" flex flexh">
             <li>Write your </li>
             <li id="span2">Mail</li>
         </ul>
@@ -36,7 +36,7 @@
                     <li id="resign">Resignation letter </li>
                 </a>
                 <a href="#h3">
-                    <li id=" sack">Sack letter</li>
+                    <li id="sack">Sack letter</li>
                 </a>
             </ul>
         </div>
@@ -169,10 +169,10 @@
 
     <div class="main-container " id="mncont1">
         <div class="sch-form" id="h2">
-            <p class="h1 h12" id="h13">School application mail </p>
+            <p class="h1 h12" id="h13">Resignation mail </p>
             <div id="but2" class="but">
                 <a href="#mail2">
-                    <p class="h1">School application mail </p>
+                    <p class="h1">Resignation mail </p>
                     <p class="file"><span id="fileinspan2" >Generate real file...</span> <span class="file-span" id="file-span2" >Return to input...</span> </p>
                 </a>
             </div>
@@ -210,7 +210,7 @@
                 </div>
                 <main>
                     <p>Generate Mail...</p>
-                    <a href="#h1"> <button type="submit" class="btn">Submit</button></a>
+                    <a href="#h2"> <button type="submit" class="btn">Submit</button></a>
 
                 </main>
 
@@ -259,8 +259,8 @@
                 </span></p>
             <main id="main2" class="main1">
                 <h4 id="ei">Edit Input...</h4>
-                <a href="#h1"><button id="edit2">Edit</button></a>
-                <a href="#h1"><button id="new2">New</button></a>
+                <a href="#h2"><button id="edit2">Edit</button></a>
+                <a href="#h2"><button id="new2">New</button></a>
 
             </main>
         </div>
@@ -272,7 +272,14 @@
 
     <div class="main-container " id="mncont2">
         <div class="sch-form">
-            <p id="h3" class="h1">A mail to Sack </p>
+            <div class="sch-form" id="h3">
+                <p class="h1 h12" id="h14">Temination of Employmet </p>
+                <div id="but3" class="but">
+                    <a href="#mail3">
+                        <p class="h1">Temination of Employmet </p>
+                        <p class="file"><span id="fileinspan3" >Generate real file...</span> <span class="file-span" id="file-span3" >Return to input...</span> </p>
+                    </a>
+                </div>
             <ul class="count">
                 <li>Generating...</li>
                 <ul class="flex2">
@@ -283,31 +290,49 @@
                     <li id="five">5</li>
                 </ul>
             </ul>
-            <form id="form2" class="form1">
+            <form id="form3" class="form1">
                 <div>
-                    <label for="manager-nm">Manager's Name :</label>
-                    <input id="manager-nm" required type="text">
+                    <label for="employ-name">Employee's Name :</label>
+                    <input id="employ-name" required type="text">
                 </div>
                 <div>
-                    <label for="yrname">Your Surname and First Name :</label>
-                    <input id="yrname" required type="text">
+                    <label for="yr-name">Your Surname and First Name :</label>
+                    <input id="yr-name" required type="text">
                 </div>
                 <div>
-                    <label for="company">Company Name :</label>
-                    <input id="company" required type="text">
+                    <label for="hr-manager">HR Manager Full Name :</label>
+                    <input id="hr-manager" required type="text">
                 </div>
                 <div>
-                    <label for="yrposition">Your Position :</label>
-                    <input id="yrposition" required type="text">
+                    <label for="hr-email">HR Manager Email Address :</label>
+                    <input id="hr-email" required placeholder="marticjesus@gmail.com" type="email">
                 </div>
                 <div>
-                    <label for="nw-date">Present date :</label>
-                    <input id="nw-date" required type="date">
+                    <label for="hr-number">HR Manager Phone Number :</label>
+                    <input id="hr-number" required type="number">
+                </div>
+
+                <div>
+                    <label for="name-company">Company Name :</label>
+                    <input id="name-company" required type="text">
+                </div>
+                <div>
+                    <label for="yr-position">Your Position :</label>
+                    <input id="yr-position" required type="text">
+                </div>
+                <div>
+                    <label for="reason">Reason for termination :</label>
+                    <input id="reason" required type="text">
+                </div>
+             
+                <div>
+                    <label for="day">Present date :</label>
+                    <input id="day" required type="date">
 
                 </div>
                 <main>
                     <p>Generate Mail...</p>
-                    <a href="#h1"> <button type="submit" class="btn">Submit</button></a>
+                    <a href="#h3"> <button type="submit" class="btn">Submit</button></a>
 
                 </main>
 
@@ -315,44 +340,40 @@
             </form>
         </div>
 
-        <div id="mail2" class="email-full">
-            <h1>Resignation mail</h1>
+        <div id="mail3" class="email-full">
+            <h1>Termination of Employmet</h1>
 
-            <p> Dear <span class="manager-nm"></span>,</p>
+           <p> Dear <span class="employ-name">[Employee's Name]</span>,</p>
 
-            <p> I am writing to formally resign from my position as <span class="yrposition"></span> at <span
-                    class="company"></span> , effective <span class="nw-date"></span> . After careful
-                consideration, I have decided to move on to pursue new opportunities that align more closely with my
-                career goals and personal aspirations. </p>
-
-            <p> I want to express my sincere gratitude for the opportunities for growth and development that you and the
-                company have provided me during my tenure. It has been a pleasure working with such a talented and
-                supportive team, and I am grateful for the valuable experiences and relationships I have gained.
-            </p>
-            <p> I will do everything possible to ensure a smooth transition during my remaining time here. I am
-                committed to completing any pending projects and assisting in training my replacement, if necessary.
-            </p>
-            <p> Please let me know if there are any specific tasks or responsibilities you would like me to focus on
-                before my departure. Additionally, I am available to discuss my transition plan or provide any necessary
-                handover documentation.</p>
-
-            <p> Thank you once again for the support and guidance you have provided me during my time at <span
-                    class="company"></span>. I sincerely appreciate the opportunities I have had here, and I wish the
-                company continued success in the future.
-            </p>
-
-            <p> Warm regards,</p>
+          <p>  I am writing to inform you that, regrettably, your employment with <span class="name-company">[Company Name]</span> is terminated effective immediately, for following reasons of <span class="reason">[reason for termination, e.g., a review of performance issues, violation of company policy, etc.]</span>.</p>
+            
+           <p> This decision was made after careful consideration and discussion among the management team. Despite our previous discussions and efforts to address the issues, we have not seen the necessary improvements or changes required for your continued employment with the company.
+        </p>
+           <p> Please be aware that this decision is final and not open to appeal. We will honor all legal and contractual obligations, including payment for any accrued both unused vacation days and other benefits as per company policy.
+        </p>
+           <p> You will be provided with details regarding final paycheck, benefits, return of company property, etc. Additionally, we will arrange for a meeting to collect any company property in your possession and discuss the logistics of your departure.
+        </p>
+          <p>  We understand that this news may come as a shock, and we want to express our appreciation for your contributions to <span class="name-company">[Company Name]</span> during your time here. We wish you the best in your future endeavors.
+        </p>
+           <p>
+            If you have any questions or require further clarification, please do not hesitate to contact <span class="hr-manager">[HR Manager's Name]</span> at <span class="hr-email">[HR Manager's Email Address]</span> or <span class="hr-number"> [HR Manager's Phone Number]</span>.
+           </p>
             <br>
-
-            <p><span class="yrname"></span></p>
+            
+           <p> Sincerely,</p>
             <br>
-            <p> <span class="yrposition"></span></p>
-            <br>
-            <p> <span class="nw-date"></span></p>
-            <main id="main2" class="main1">
+            
+           <p><span class="yr-name">[Your Name]</span></p>
+           <br>
+           <p><span class="yr-position"> [Your Position]</span></p>
+           <br>
+           <p><span class="name-company"> [Company Name]</span></p>
+           <br>
+            <p><span class="day"> [Present Date]</span></p>
+            <main id="main3" class="main1">
                 <h4 id="ei">Edit Input...</h4>
-                <a href="#h1"><button id="edit2">Edit</button></a>
-                <a href="#h1"><button id="new2">New</button></a>
+                <a href="#h3"><button id="edit3">Edit</button></a>
+                <a href="#h3"><button id="new3">New</button></a>
 
             </main>
         </div>
