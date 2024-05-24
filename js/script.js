@@ -1,20 +1,20 @@
 $(document).ready(function () {
     $("#form").submit(function (event) {
-        const name1Taken = $("#name1").val();
-        const name2Taken = $("#name2").val();
-        const schNameTaken = $("#sch-name").val();
-        const intrestTaken = $("#intrest").val();
-        const emailTaken = $("#email").val();
-        const numberTaken = $("#number").val();
-        const dateTaken = $("#date").val();
+        const value1Taken = $("#name1").val();
+        const value2Taken = $("#name2").val();
+        const value3Taken = $("#sch-name").val();
+        const value4Taken = $("#intrest").val();
+        const value5Taken = $("#email").val();
+        const value6Taken = $("#number").val();
+        const value7Taken = $("#date").val();
 
-        $(".name1").html(name1Taken);
-        $(".name2").html(name2Taken);
-        $(".sch-name").html(schNameTaken);
-        $(".intrest").html(intrestTaken);
-        $(".email").html(emailTaken);
-        $(".number").html(numberTaken);
-        $(".date").html(dateTaken)
+        $(".name1").html(value1Taken);
+        $(".name2").html(value2Taken);
+        $(".sch-name").html(value3Taken);
+        $(".intrest").html(value4Taken);
+        $(".email").html(value5Taken);
+        $(".number").html(value6Taken);
+        $(".date").html(value7Taken)
 
 
 
@@ -32,12 +32,16 @@ $(document).ready(function () {
     });
 
     $("#sch").click(function () {
-        $("#mncont").show();
-        $("#form").show();
+        $("#mncont").show()
         $("#mncont1").hide();
+        $("#mncont2").hide();
+        $("#form").show();
         $("#form2").hide();
+        $("#form3").hide();
         $("#mail").hide();
         $(".count").hide();
+        $("#h12").hide();
+        $("#but").show();
         $("#fileinspan").show();
         $("#file-span").hide();
 
@@ -105,17 +109,17 @@ $(document).ready(function () {
 
 
     $("#form2").submit(function (event) {
-        const name1Taken = $("#manager-nm").val();
-        const name2Taken = $("#yrname").val();
-        const schNameTaken = $("#company").val();
-        const intrestTaken = $("#yrposition").val();
-        const emailTaken = $("#nw-date").val();
+        const value1Taken = $("#manager-nm").val();
+        const value2Taken = $("#yrname").val();
+        const value3Taken = $("#company").val();
+        const value4Taken = $("#yrposition").val();
+        const value5Taken = $("#nw-date").val();
 
-        $(".manager-nm").html(name1Taken);
-        $(".yrname").html(name2Taken);
-        $(".company").html(schNameTaken);
-        $(".yrposition").html(intrestTaken);
-        $(".nw-date").html(emailTaken);
+        $(".manager-nm").html(value1Taken);
+        $(".yrname").html(value2Taken);
+        $(".company").html(value3Taken);
+        $(".yrposition").html(value4Taken);
+        $(".nw-date").html(value5Taken);
 
 
 
@@ -135,12 +139,16 @@ $(document).ready(function () {
     });
 
     $("#resign").click(function () {
-        $("#mncont1").show();
-        $("#form2").show();
         $("#mncont").hide();
+        $("#mncont1").show();
+        $("#mncont2").hide();
+        $("#form2").show();
+        $("#form3").hide();
         $("#form").hide();
         $("#mail2").hide();
         $(".count").hide();
+        $("#h13").hide();
+        $("#but2").show();
         $("#fileinspan2").show();
         $("#file-span2").hide();
 
@@ -198,6 +206,125 @@ $(document).ready(function () {
         $("#nw-date").val("");
     });
 
+
+    $("#form3").submit(function (event) {
+        const value1Taken = $("#employ-name").val();
+        const value2Taken = $("#yr-name").val();
+        const value3Taken = $("#hr-manager").val();
+        const value4Taken = $("#hr-email").val();
+        const value5Taken = $("#hr-number").val();
+        const value6Taken = $("#name-company").val();
+        const value7Taken = $("#yr-position").val();
+        const value8Taken = $("#reason").val();
+        const value9Taken = $("#day").val();
+
+        $(".employ-name").html(value1Taken);
+        $(".yr-name").html(value2Taken);
+        $(".hr-manager").html(value3Taken);
+        $(".hr-email").html(value4Taken);
+        $(".hr-number").html(value5Taken);
+        $(".name-company").html(value6Taken);
+        $(".yr-position").html(value7Taken)
+        $(".reason").html(value8Taken);
+        $(".day").html(value9Taken)
+
+
+
+        $("#mail3").show();
+        $("#form3").hide();
+        $("#main3").show();
+        $(".count").show();
+        $("#edit3").show();
+        $("#h14").hide();
+        $("#but3").show();
+        $("#fileinspan3").toggle();
+        $("#file-span3").toggle();
+
+        event.preventDefault();
+    });
+
+    $("#sack").click(function () {
+        $("#mncont").hide();
+        $("#mncont1").hide();
+        $("#mncont2").show();
+        $("#form").hide();
+        $("#form2").hide();
+        $("#form3").show();
+        $("#mail3").hide();
+        $(".count").hide();
+        $("#h14").hide();
+        $("#but3").show();
+        $("#fileinspan3").show();
+        $("#file-span3").hide();
+
+
+
+        $("#employ-name").val("");
+        $("#yr-name").val("");
+        $("#hr-manager").val("");
+        $("#hr-email").val("");
+        $("#hr-number").val("");
+        $("#name-company").val("");
+        $("#yr-position").val("");
+        $("#reason").val("");
+        $("#day").val("");
+
+    });
+
+    $("#but3").click(function () {
+        $("#form3").toggle();
+        $("#mail3").toggle();
+        $("#fileinspan3").toggle();
+        $("#file-span3").toggle();
+        $(".count").toggle();
+        $("#edit3").show();
+        $("#main3").hide();
+
+
+
+        $(".employ-name").html("[Employee's Name]");
+        $(".yr-name").html("[Your Name]");
+        $(".hr-manager").html("[HR Manager's Name]");
+        $(".hr-email").html("[HR Manager's Email Address]");
+        $(".hr-number").html(" [HR Manager's Phone Number]");
+        $(".name-company").html("[Company Name]");
+        $(".yr-position").html(" [Your Position]")
+        $(".reason").html("[reason for termination, e.g., a review of performance issues, violation of company policy, etc.]");
+        $(".day").html("[Present Date]")
+
+    });
+
+
+
+    $("#edit3").click(function () {
+        $("#h14").show();
+        $("#but3").hide();
+        $("#main3").hide();
+        $("#form3").show();
+        $(".count").toggle();
+        $("#fileinspan3").toggle();
+        $("#file-span3").toggle()
+    });
+
+    $("#new3").click(function () {
+        $(".count").hide();
+        $("#main3").show();
+        $("#mail3").hide();
+        $("#form3").show();
+        $("#fileinspan3").toggle();
+        $("#file-span3").toggle()
+
+
+        $("#employ-name").val("");
+        $("#yr-name").val("");
+        $("#hr-manager").val("");
+        $("#hr-email").val("");
+        $("#hr-number").val("");
+        $("#name-company").val("");
+        $("#yr-position").val("");
+        $("#reason").val("");
+        $("#day").val("");
+    });
 
 });
 
