@@ -32,35 +32,7 @@ html {
 body {
 
     background-color: rgb(39, 2, 2);
-    animation: colour 50s linear infinite;
-}
 
-@keyframes colour {
-    0% {
-        transform: translateX(-35px);
-        background-color: rgb(39, 2, 2);
-
-    }
-
-    25% {
-
-        background-color: rgba(61, 4, 38, 0.822);
-
-    }
-
-    50% {
-
-        background-color: rgb(77, 70, 12);
-    }
-
-    75% {
-
-        background-color: rgb(2, 16, 56);
-    }
-
-    100% {
-        background-color: black;
-    }
 }
 
 
@@ -323,7 +295,8 @@ button {
     color: white;
     background-color: rgba(190, 83, 83, 0.473);
 }
-.h12{
+
+.h12 {
     display: none;
 }
 
@@ -344,8 +317,10 @@ button {
     font-weight: 700;
     font-size: 25px;
     color: rgb(19, 15, 15);
+    border-radius: 30px;
 }
-.file-span{
+
+.file-span {
     display: none;
 }
 
@@ -673,7 +648,7 @@ button {
     display: flex;
     align-items: center;
     height: 100px;
-    width: 30%;
+    width: 40%;
     border-radius: 20px;
 
 }
@@ -705,7 +680,7 @@ main {
     align-items: center;
     gap: 20px;
     height: 100px;
-    width: 40%;
+    width: 50%;
     border-radius: 20px;
 
 
@@ -713,6 +688,7 @@ main {
 
 .main1 {
     display: none;
+
 }
 
 main #ei {
@@ -741,3 +717,100 @@ main button:hover {
     background-color: blue;
     color: red;
 }
+
+.copying {
+    display: none;
+    margin-left: 90%;
+   
+   }
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 7px 2px white;
+    border-radius: 15px;
+    cursor: pointer;
+
+   
+}
+
+
+
+.copy:hover {
+    background-color: black;
+    color: rgb(243, 19, 19);
+    font-size: 18px;
+    font-weight: 900;
+    transition: 0.7s ease-in-out;
+}
+
+.cop {
+    display: none;
+    font-size: 17px;
+    font-weight: 700;
+
+}
+
+.copy:hover .copn-g {
+    display: block !important;
+}
+
+.copy:hover .cop {
+    display: none !important;
+}
+.copy:active .copn-g {
+    display: none !important;
+}
+.copy:active .cop-g {
+    color:rgb(19, 233, 19);
+    display: block !important;
+}
+
+/* .copying {
+    animation: copying 1s linear;
+}
+
+
+@keyframes copying {
+    0% {
+
+        font-size: 17px;
+        font-weight: 900;
+    }
+
+    20% {
+
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    40% {
+        font-size: 7px;
+        font-weight: 400;
+
+    }
+
+    60% {
+        font-size: 2px;
+        font-weight: 200;
+
+    }
+
+    80% {
+        font-size: 0;
+    }
+
+    100% {
+
+        font-size: 0;
+
+    }
+} */
